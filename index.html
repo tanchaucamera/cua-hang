@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue Điện Tử</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f4; display: flex; justify-content: center; padding: 50px; }
+        
+        /* Khung thẻ sản phẩm */
+        .product-card {
+            background: white;
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .product-card:hover { transform: translateY(-5px); }
+
+        /* Hình ảnh sản phẩm */
+        .product-img { width: 100%; height: 200px; object-fit: cover; background: #eee; }
+
+        /* Nội dung */
+        .content { padding: 20px; }
+        .category { color: #888; font-size: 12px; text-transform: uppercase; font-weight: bold; }
+        .title { font-size: 18px; margin: 10px 0; color: #333; }
+        .price { color: #e74c3c; font-size: 20px; font-weight: bold; margin-bottom: 15px; }
+        
+        /* Danh sách thông số */
+        .specs { font-size: 13px; color: #666; margin-bottom: 20px; padding: 0; list-style: none; }
+        .specs li { margin-bottom: 5px; }
+        .specs li::before { content: "• "; color: #27ae60; }
+
+        /* Nút liên hệ */
+        .btn-contact {
+            display: block;
+            text-align: center;
+            padding: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .zalo { background: #0068ff; color: white; }
+        .phone { border: 2px solid #27ae60; color: #27ae60; }
+    </style>
+</head>
+<body>
+
+    <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1557333610-90ee4a951ecf?auto=format&fit=crop&w=300&q=80" alt="Camera" class="product-img">
+        <div class="content">
+            <span class="category">Camera An Ninh</span>
+            <h3 class="title">Camera Hikvision 2.0MP SIÊU NÉT</h3>
+            <div class="price">1.250.000đ</div>
+            
+            <ul class="specs">
+                <li>Độ phân giải Full HD 1080p</li>
+                <li>Hồng ngoại ban đêm 30m</li>
+                <li>Chống nước chuẩn IP67</li>
+            </ul>
+
+            <a href="https://zalo.me/SỐ_ĐIỆN_THOẠI" class="btn-contact zalo">Nhắn tin Zalo ngay</a>
+            <a href="tel:SỐ_ĐIỆN_THOẠI" class="btn-contact phone">Gọi tư vấn: 09xx...</a>
+        </div>
+    </div>
+
+</body>
+</html>
